@@ -1,0 +1,8 @@
+<script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Mencegah refresh halaman
+        
+        // Menampilkan pesan sukses
+        alert('Terima kasih! Form sudah dikirim (demo).');
+    });
+</script>

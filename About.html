@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About · Tugas Mandiri 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Beranda">
+        <!-- same svg -->
+        <svg width="36" height="36" viewBox="0 0 100 100" aria-hidden> <defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#6dd3ff"/><stop offset="1" stop-color="#7b61ff"/></linearGradient></defs><circle cx="50" cy="50" r="45" fill="url(#g2)"/><text x="50" y="58" font-size="40" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif">S</text></svg>
+        <span class="brand-name">Matakuliah Pengembangan Aplikasih Berbasis WEB</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Buka menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-about">
+    <section class="about-intro">
+      <h1>Tentang Saya</h1>
+      <p class="lead">Perkenalkan saya <strong>virtsa gita saputri</strong>, mahasiswa Dari Program Studi Sistem Informasi Angkatan 2023. saya sedang mempelajari dasar-dasar pengembangan web.
+         Website ini dibuat sebagai bagian dari tugas 2 untuk mempraktikkan pembuatan halaman statis dengan HTML dan CSS.</p>
+      <p class="lead">Melalui tugas ini, saya belajar cara membuat struktur website multi-halaman, menghubungkan antar halaman menggunakan navigasi, serta menerapkan desain yang menarik dengan CSS.</p>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>Profil Singkat</h3>
+          <p>Nama   : virtsa gita saputri </p>
+          <p>NPM    : 202357201033</p>
+          <p>Mata Kuliah  : Pengembangan Aplikasih Berbasis WEB</p>
+        </div>
+
+        <div class="card">
+          <h3>Tujuan Pembuatan</h3>
+            <p>Website ini dibuat sebagai implementasi dari tugas akademik untuk memperdalam pemahaman tentang pengembangan website statis. Tujuannya adalah:</p>
+            <ul>
+                <li>Membuat website dengan lebih dari 1 halaman (Home, About, Contact)</li>
+                <li>Menghubungkan antar halaman menggunakan navigation menu</li>
+                <li>Menerapkan desain sederhana namun menarik dengan CSS</li>
+            </ul>
+
+        <div class="card">
+          <h3>Teknologi yang Digunakan</h3>
+            <p>Website ini dibangun dengan teknologi dasar berikut:</p>
+            <ul>
+                <li><strong>HTML</strong> Struktur dasar website</li>
+                <li><strong>CSS (Responsive)</strong> Desain tampilan dan responsivitas</li>
+                <li><strong>JavaScript</strong> Interaksi sederhana (toggle menu mobile)</li>
+            </ul>
+            <p>*Tidak menggunakan backend atau database.</p>
+
+   <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Universitas musamus — Fakultas Teknik</p>
+      <p>Program Studi Sistem Informasi</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">@virtsagitaaa</a>
+        <a href="#" aria-label="Email">virtsagitasaputri@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // same mobile nav
+    const btn2 = document.querySelector('.nav-toggle');
+    const nav2 = document.querySelector('.main-nav');
+    btn2.addEventListener('click', () => {
+      const expanded = btn2.getAttribute('aria-expanded') === 'true';
+      btn2.setAttribute('aria-expanded', String(!expanded));
+      nav2.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
